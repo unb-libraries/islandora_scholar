@@ -44,6 +44,14 @@ function islandora_bibliography_ir_thesisCModel_islandora_bookmark_object_markup
 }
 
 /**
+ * Implements hook_islandora_bookmark_object_markup().
+ */
+function islandora_bibliography_ir_seniorReportCModel_islandora_bookmark_object_markup(AbstractObject $object) {
+  module_load_include('inc', 'islandora_bibliography', 'includes/utilities');
+  return islandora_bibiliography_get_bookmark_output($object);
+}
+
+/**
  * Implements hook_islandora_bookmark_rss_item().
  */
 function islandora_bibliography_ir_citationCModel_islandora_bookmark_rss_item(AbstractObject $object) {
@@ -55,6 +63,14 @@ function islandora_bibliography_ir_citationCModel_islandora_bookmark_rss_item(Ab
  * Implements hook_islandora_bookmark_rss_item().
  */
 function islandora_bibliography_ir_thesisCModel_islandora_bookmark_rss_item(AbstractObject $object) {
+  module_load_include('inc', 'islandora_bibliography', 'includes/utilities');
+  return islandora_bibliography_get_rss($object);
+}
+
+/**
+ * Implements hook_islandora_bookmark_rss_item().
+ */
+function islandora_bibliography_ir_seniorReportCModel_islandora_bookmark_rss_item(AbstractObject $object) {
   module_load_include('inc', 'islandora_bibliography', 'includes/utilities');
   return islandora_bibliography_get_rss($object);
 }

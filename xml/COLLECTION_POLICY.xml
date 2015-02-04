@@ -3,6 +3,7 @@
   <content_models>
     <content_model dsid="ISLANDORACM" name="Citation Content Model" namespace="ir" pid="ir:citationCModel"></content_model>
     <content_model dsid="ISLANDORACM" name="Thesis Content Model" namespace="ir" pid="ir:thesisCModel"></content_model>
+    <content_model dsid="ISLANDORACM" name="Senior Report Content Model" namespace="ir" pid="ir:seniorReportCModel"></content_model>
   </content_models>
   <relationship>isMemberOfCollection</relationship>
   <staging_area/>
